@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categoría - Dear Unknown</title>
+    <link rel="shortcut icon" href="imagenes/imagen facon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="categoria.css">
+</head>
+
+<body class="categoria-body">
+
+    <!-- ENCABEZADO Y NAVEGACIÓN PRIVADA -->
+    <header class="header-dashboard">
+        <div class="contenedor-header-dash">
+            <!-- Logo principal -->
+            <a href="dashboard.html" class="logo-contenedor">
+                <svg class="logo-icono" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Logo Dear Unknown">
+                    <ellipse cx="50" cy="82" rx="35" ry="6" fill="#000000" opacity="0.12"/>
+                    <path d="M15 72C28 67 42 70 50 75C58 70 72 67 85 72V40C72 35 58 38 50 43C42 38 28 35 15 40V72Z" fill="#FFFFFF" stroke="#2B78AC" stroke-width="2.5" stroke-linejoin="round"/>
+                    <path d="M50 43V75" stroke="#2B78AC" stroke-width="2.5" stroke-linecap="round"/>
+                    <path d="M28 30C32 26 36 27 39 30C37 25 31 23 28 30Z" fill="#3B92CE"/>
+                    <path d="M44 22C50 16 56 18 60 22C57 15 48 12 44 22Z" fill="#0086D8"/>
+                    <path d="M65 28C69 24 73 25 76 28C74 23 68 21 65 28Z" fill="#16ACBD"/>
+                    <path d="M52 12C56 8 60 9 63 12C60 7 54 5 52 12Z" fill="#16ACBD"/>
+                </svg>
+                <h1 class="logo-texto">dear unknown</h1>
+            </a>
+
+            <!-- Buscador Global -->
+            <div class="buscador-header">
+                <input type="text" placeholder="Buscar en esta categoría..." class="input-busqueda-global">
+                <button type="button" class="btn-buscar-dash">Buscar</button>
+            </div>
+
+            <!-- Acciones del Usuario Privado -->
+            <div class="acciones-usuario">
+                <a href="dashboard.html" class="btn-volver">Volver al inicio</a>
+                
+                <!-- Menú de Perfil -->
+                <div class="perfil-usuario">
+                    <div class="avatar-anonimo">U</div>
+                    <span class="nombre-usuario">@LectorNocturno</span>
+                    <a href="index.html" class="btn-cerrar-sesion" title="Cerrar sesión">Salir</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <div class="contenedor-categoria">
+
+        <!-- CABECERA DE LA CATEGORÍA -->
+        <section class="banner-categoria">
+            <span class="etiqueta-categoria">Tema principal</span>
+            <h2 class="titulo-categoria">#TrabajoYCarrera</h2>
+            <p class="descripcion-categoria">Un espacio para compartir experiencias sobre el trabajo, los retos profesionales y las decisiones que construyen nuestro futuro. Habla sobre tus metas, frustraciones, logros, cambios de rumbo y todo aquello que forma parte de tu camino laboral.</p>
+            <div class="stats-categoria">
+                <span>1,240 Publicaciones</span>
+                <span>•</span>
+                <span>Comunidad activa</span>
+            </div>
+        </section>
+
+        <!-- FILTROS Y CONTENIDO -->
+        <main class="feed-categoria">
+
+            <div class="barra-filtros">
+                <span class="texto-ordenar">Ordenar por:</span>
+                <button class="btn-filtro activo">Recientes</button>
+                <button class="btn-filtro">Más apoyados</button>
+                <button class="btn-filtro">Sin respuestas</button>
+            </div>
+
+            <!-- PUBLICACIÓN 1 -->
+            <article class="tarjeta-post">
+                <div class="post-header">
+                    <div class="post-autor">
+                        <div class="avatar-post">A</div>
+                        <div>
+                            <span class="autor-nombre">Usuario Anónimo</span>
+                            <span class="post-tiempo">• Hace 15 min</span>
+                        </div>
+                    </div>
+                    <span class="tag-post">#TrabajoYCarrera</span>
+                </div>
+                <div class="post-contenido">
+                    <p>Llevo varios meses sintiendo que mi trabajo ya no me motiva como antes. No es que sea un mal empleo, pero cada día me pregunto si realmente quiero seguir haciendo esto durante los próximos años. Me da miedo empezar de nuevo, pero también me preocupa quedarme en un lugar solo por miedo a cambiar.</p>
+                </div>
+                <div class="post-footer">
+                    <button type="button" class="btn-reaccion">Apoyar (12)</button>
+                    <button type="button" class="btn-reaccion">Responder (3)</button>
+                    <button type="button" class="btn-reaccion">Guardar</button>
+                </div>
+            </article>
+
+            <!-- PUBLICACIÓN 2 -->
+            <article class="tarjeta-post">
+                <div class="post-header">
+                    <div class="post-autor">
+                        <div class="avatar-post">A</div>
+                        <div>
+                            <span class="autor-nombre">Usuario Anónimo</span>
+                            <span class="post-tiempo">• Hace 2 horas</span>
+                        </div>
+                    </div>
+                    <span class="tag-post">#TrabajoYCarrera</span>
+                </div>
+                <div class="post-contenido">
+                    <p>Hoy finalmente recibí una oportunidad por la que llevaba mucho tiempo trabajando. No es el puesto perfecto ni significa que tenga todo resuelto, pero me hizo recordar todas las veces que pensé en rendirme. A veces avanzar no se siente como un gran salto, sino como darte cuenta de que todo ese esfuerzo sí estaba sirviendo para algo.</p>
+                </div>
+                <div class="post-footer">
+                    <button type="button" class="btn-reaccion">Apoyar (24)</button>
+                    <button type="button" class="btn-reaccion">Responder (5)</button>
+                    <button type="button" class="btn-reaccion">Guardar</button>
+                </div>
+            </article>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

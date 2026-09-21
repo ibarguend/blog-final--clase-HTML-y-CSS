@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categoría - Dear Unknown</title>
+    <link rel="shortcut icon" href="imagenes/imagen facon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="categoria.css">
+</head>
+
+<body class="categoria-body">
+
+    <header class="header-dashboard">
+        <div class="contenedor-header-dash">
+           
+            <a href="dashboard.html" class="logo-contenedor">
+                <svg class="logo-icono" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Logo Dear Unknown">
+                    <ellipse cx="50" cy="82" rx="35" ry="6" fill="#000000" opacity="0.12"/>
+                    <path d="M15 72C28 67 42 70 50 75C58 70 72 67 85 72V40C72 35 58 38 50 43C42 38 28 35 15 40V72Z" fill="#FFFFFF" stroke="#2B78AC" stroke-width="2.5" stroke-linejoin="round"/>
+                    <path d="M50 43V75" stroke="#2B78AC" stroke-width="2.5" stroke-linecap="round"/>
+                    <path d="M28 30C32 26 36 27 39 30C37 25 31 23 28 30Z" fill="#3B92CE"/>
+                    <path d="M44 22C50 16 56 18 60 22C57 15 48 12 44 22Z" fill="#0086D8"/>
+                    <path d="M65 28C69 24 73 25 76 28C74 23 68 21 65 28Z" fill="#16ACBD"/>
+                    <path d="M52 12C56 8 60 9 63 12C60 7 54 5 52 12Z" fill="#16ACBD"/>
+                </svg>
+                <h1 class="logo-texto">dear unknown</h1>
+            </a>
+
+            <div class="buscador-header">
+                <input type="text" placeholder="Buscar en esta categoría..." class="input-busqueda-global">
+                <button type="button" class="btn-buscar-dash">Buscar</button>
+            </div>
+
+            <div class="acciones-usuario">
+                <a href="dashboard.html" class="btn-volver">Volver al inicio</a>
+
+                <div class="perfil-usuario">
+                    <div class="avatar-anonimo">U</div>
+                    <span class="nombre-usuario">@LectorNocturno</span>
+                    <a href="index.html" class="btn-cerrar-sesion" title="Cerrar sesión">Salir</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="contenedor-categoria">
+
+        <section class="banner-categoria">
+            <span class="etiqueta-categoria">Tema principal</span>
+            <h2 class="titulo-categoria">#AmigosYRelaciones</h2>
+            <p class="descripcion-categoria">Un espacio para compartir historias sobre amistades, vínculos personales y relaciones que nos marcan. Habla sobre lo que sientes, lo que has vivido y esos momentos en los que una persona puede cambiar nuestra forma de ver las cosas.</p>
+            <div class="stats-categoria">
+                <span>1,856 Publicaciones</span>
+                <span>•</span>
+                <span>Comunidad activa</span>
+            </div>
+        </section>
+
+        <main class="feed-categoria">
+
+            <div class="barra-filtros">
+                <span class="texto-ordenar">Ordenar por:</span>
+                <button class="btn-filtro activo">Recientes</button>
+                <button class="btn-filtro">Más apoyados</button>
+                <button class="btn-filtro">Sin respuestas</button>
+            </div>
+
+            <article class="tarjeta-post">
+                <div class="post-header">
+                    <div class="post-autor">
+                        <div class="avatar-post">A</div>
+                        <div>
+                            <span class="autor-nombre">Usuario Anónimo</span>
+                            <span class="post-tiempo">• Hace 15 min</span>
+                        </div>
+                    </div>
+                    <span class="tag-post">#AmigosYRelaciones</span>
+                </div>
+                <div class="post-contenido">
+                    <p>Últimamente siento que mi grupo de amigos ya no es el mismo. Seguimos hablando y saliendo de vez en cuando, pero siento una distancia que antes no estaba ahí. No sé si simplemente estamos cambiando o si estoy intentando mantener algo que ya no funciona. Supongo que crecer también significa aprender a dejar ir algunas personas.</p>
+                </div>
+                <div class="post-footer">
+                    <button type="button" class="btn-reaccion">Apoyar (12)</button>
+                    <button type="button" class="btn-reaccion">Responder (3)</button>
+                    <button type="button" class="btn-reaccion">Guardar</button>
+                </div>
+            </article>
+
+            <article class="tarjeta-post">
+                <div class="post-header">
+                    <div class="post-autor">
+                        <div class="avatar-post">A</div>
+                        <div>
+                            <span class="autor-nombre">Usuario Anónimo</span>
+                            <span class="post-tiempo">• Hace 2 horas</span>
+                        </div>
+                    </div>
+                    <span class="tag-post">#AmigosYRelaciones</span>
+                </div>
+                <div class="post-contenido">
+                    <p>Hoy me di cuenta de lo importante que es tener aunque sea una persona con quien puedas hablar sin miedo a ser juzgado. A veces no necesitamos que nos solucionen los problemas, solo que alguien se quede, escuche y nos recuerde que no tenemos que pasar por todo solos.</p>
+                </div>
+                <div class="post-footer">
+                    <button type="button" class="btn-reaccion">Apoyar (24)</button>
+                    <button type="button" class="btn-reaccion">Responder (5)</button>
+                    <button type="button" class="btn-reaccion">Guardar</button>
+                </div>
+            </article>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

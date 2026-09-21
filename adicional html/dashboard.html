@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Diario - Dear Unknown</title>
+    <link rel="shortcut icon" href="imagenes/imagen facon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body class="dashboard-body">
+
+    <header class="header-dashboard">
+        <div class="contenedor-header-dash">
+
+            <a href="dashboard.html" class="logo-contenedor">
+                <svg class="logo-icono" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Logo Dear Unknown">
+                    <ellipse cx="50" cy="82" rx="35" ry="6" fill="#000000" opacity="0.12"/>
+                    <path d="M15 72C28 67 42 70 50 75C58 70 72 67 85 72V40C72 35 58 38 50 43C42 38 28 35 15 40V72Z" fill="#FFFFFF" stroke="#2B78AC" stroke-width="2.5" stroke-linejoin="round"/>
+                    <path d="M50 43V75" stroke="#2B78AC" stroke-width="2.5" stroke-linecap="round"/>
+                    <path d="M28 30C32 26 36 27 39 30C37 25 31 23 28 30Z" fill="#3B92CE"/>
+                    <path d="M44 22C50 16 56 18 60 22C57 15 48 12 44 22Z" fill="#0086D8"/>
+                    <path d="M65 28C69 24 73 25 76 28C74 23 68 21 65 28Z" fill="#16ACBD"/>
+                    <path d="M52 12C56 8 60 9 63 12C60 7 54 5 52 12Z" fill="#16ACBD"/>
+                </svg>
+                <h1 class="logo-texto">dear unknown</h1>
+            </a>
+
+            <div class="buscador-header">
+                <input type="text" placeholder="Buscar entradas, emociones o #tags..." class="input-busqueda-global">
+                <button type="button" class="btn-buscar-dash">🔍</button>
+            </div>
+
+            <div class="acciones-usuario">
+                <button type="button" class="btn-nueva-entrada">+ Crear Entrada</button>
+                <button type="button" class="btn-icono-nav" title="Notificaciones">🔔</button>
+                
+                <div class="perfil-usuario">
+                    <div class="avatar-anonimo">👤</div>
+                    <span class="nombre-usuario">@LectorNocturno</span>
+                    <a href="index.html" class="btn-cerrar-sesion" title="Cerrar sesión">🚪</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="contenedor-dashboard">
+
+        <main class="feed-principal">
+
+            <section class="caja-creacion">
+                <div class="creacion-header">
+                    <div class="avatar-pequeno">👤</div>
+                    <span class="pregunta-prompt">¿Qué quieres desahogar o compartir hoy?</span>
+                </div>
+                <textarea placeholder="Escribe libremente aquí... Nadie sabrá quién eres." class="textarea-entrada"></textarea>
+                <div class="creacion-footer">
+                    <div class="opciones-publicacion">
+                        <select class="select-visibilidad">
+                            <option value="publico">🌐 Comunitario (Anónimo)</option>
+                            <option value="privado">🔒 Solo para mí (Privado)</option>
+                        </select>
+                        <select class="select-categoria-post">
+                            <option value="">Selecciona tema</option>
+                            <option value="desahogo">#Desahogo</option>
+                            <option value="reflexion">#Reflexión</option>
+                            <option value="estudios">#Estudios</option>
+                            <option value="gratitud">#Gratitud</option>
+                        </select>
+                    </div>
+                    <button type="button" class="btn-publicar">Publicar</button>
+                </div>
+            </section>
+
+            <nav class="pestanas-feed">
+                <button class="pestana activa">Comunidad</button>
+                <button class="pestana">Mis Diarios</button>
+                <button class="pestana">Guardados</button>
+            </nav>
+
+            <article class="tarjeta-post">
+                <div class="post-header">
+                    <div class="post-autor">
+                        <span class="avatar-post">🎭</span>
+                        <div>
+                            <span class="autor-nombre">Anónimo</span>
+                            <span class="post-tiempo">• Hace 15 min</span>
+                        </div>
+                    </div>
+                    <span class="tag-post">#Desahogo</span>
+                </div>
+                <div class="post-contenido">
+                    <p>Hoy ha sido un día difícil en el trabajo, pero decidí tomarme diez minutos para respirar y escribir. Recordar mis logros pasados me ayudó a poner las cosas en perspectiva.</p>
+                </div>
+                <div class="post-footer">
+                    <button type="button" class="btn-reaccion">💙 Apoyar (12)</button>
+                    <button type="button" class="btn-reaccion">💬 Comentar (3)</button>
+                    <button type="button" class="btn-reaccion">🔖 Guardar</button>
+                </div>
+            </article>
+
+            <article class="tarjeta-post">
+                <div class="post-header">
+                    <div class="post-autor">
+                        <span class="avatar-post">🌿</span>
+                        <div>
+                            <span class="autor-nombre">Anónimo</span>
+                            <span class="post-tiempo">• Hace 2 horas</span>
+                        </div>
+                    </div>
+                    <span class="tag-post">#Gratitud</span>
+                </div>
+                <div class="post-contenido">
+                    <p>Agradecido por las pequeñas cosas: un café caliente por la mañana y una buena caminata al atardecer. A veces olvidamos disfrutar los momentos simples.</p>
+                </div>
+                <div class="post-footer">
+                    <button type="button" class="btn-reaccion">💙 Apoyar (24)</button>
+                    <button type="button" class="btn-reaccion">💬 Comentar (5)</button>
+                    <button type="button" class="btn-reaccion">🔖 Guardar</button>
+                </div>
+            </article>
+
+        </main>
+
+        <aside class="aside-dashboard">
+
+            <div class="widget-aside">
+                <h3>¿Cómo te sientes hoy?</h3>
+                <p class="subtexto-widget">Registra tu estado emocional diario</p>
+                <div class="grid-emociones">
+                    <button type="button" class="btn-emocion" title="Feliz">😊<br><span>En paz</span></button>
+                    <button type="button" class="btn-emocion" title="Tranquilo">😌<br><span>Calmado</span></button>
+                    <button type="button" class="btn-emocion" title="Pensativo">🤔<br><span>Reflexivo</span></button>
+                    <button type="button" class="btn-emocion" title="Estresado">😰<br><span>Ansioso</span></button>
+                    <button type="button" class="btn-emocion" title="Triste">😢<br><span>Apenado</span></button>
+                </div>
+            </div>
+
+            <div class="widget-aside widget-habito">
+                <h3>Racha de escritura</h3>
+                <div class="contador-habito">
+                    <span class="numero-dias">🔥 3</span>
+                    <span class="texto-dias">Días seguidos escribiendo</span>
+                </div>
+                <p class="meta-habito">¡Sigue así para completar tu meta semanal de 5 entradas!</p>
+            </div>
+
+            <div class="widget-aside">
+                <h3>Etiquetas sugeridas</h3>
+                <div class="nube-tags-dash">
+                    <a href="#" class="tag">#Reflexión</a>
+                    <a href="#" class="tag">#Superación</a>
+                    <a href="#" class="tag">#Desahogo</a>
+                    <a href="#" class="tag">#Gratitud</a>
+                    <a href="#" class="tag">#Estudios</a>
+                    <a href="#" class="tag">#Amor</a>
+                </div>
+            </div>
+
+        </aside>
+
+    </div>
+
+</body>
+
+</html>
